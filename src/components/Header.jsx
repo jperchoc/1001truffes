@@ -132,99 +132,15 @@ function MobileMenu({onClose}) {
                 <nav
                 className="flex flex-col divide-y divide-gray-200 border-t border-b border-gray-200 text-sm font-medium text-gray-500"
                 >
-                <a href="" className="px-6 py-3"> Home </a>
-                <a href="" className="px-6 py-3"> About </a>
-                <a href="" className="flex items-center justify-between px-6 py-3">
-                    Products
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 5l7 7-7 7"
-                    />
-                    </svg>
-                </a>
-                <a href="" className="flex items-center justify-between px-6 py-3">
-                    Collections
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 5l7 7-7 7"
-                    />
-                    </svg>
-                </a>
-                <a href="" className="px-6 py-3"> Services </a>
-                <a href="" className="px-6 py-3"> History </a>
-                <a href="" className="px-6 py-3"> Contact </a>
-                <a href="" className="flex items-center justify-between px-6 py-3">
-                    Support
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9 5l7 7-7 7"
-                    />
-                    </svg>
-                </a>
-                <a href="" className="flex items-center px-6 py-3">
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="mr-3 h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                    />
-                    </svg>
-                    Account
-                </a>
-                <a href="" className="flex items-center px-6 py-3">
-                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="mr-3 h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
-                    />
-                    </svg>
-                    Careers
-                </a>
-                <a href="" className="px-6 py-3"> FAQs </a>
-                <a href="" className="px-6 py-3"> Privacy Policy </a>
-                <a href="" className="px-6 py-3"> Terms Conditions </a>
+                <a 
+                    onClick={e => onClose()} href="#banner" className="px-6 py-3"> A propos </a>
+                <a 
+                    onClick={e => onClose()} href="#prestations" className="px-6 py-3"> Prestations </a>
+                <a 
+                    onClick={e => onClose()} href="#testimonials" className="px-6 py-3"> Avis </a>
+                <a 
+                    onClick={e => onClose()} href="#contact" className="px-6 py-3"> Contacter </a>
+               
                 </nav>
             </div>
             </div>
