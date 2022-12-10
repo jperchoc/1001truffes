@@ -22,7 +22,7 @@ function Header() {
             <nav aria-label="Site Nav" className="hidden md:block">
             <ul className="flex items-center gap-6 text-sm">
                 <li>
-                <a className="text-gray-500 transition hover:text-gray-500/75" href="#banner">
+                <a className="text-gray-500 transition hover:text-gray-500/75" href="#about">
                     A propos
                 </a>
                 </li>
@@ -133,7 +133,7 @@ function MobileMenu({onClose}) {
                 className="flex flex-col divide-y divide-gray-200 border-t border-b border-gray-200 text-sm font-medium text-gray-500"
                 >
                 <a 
-                    onClick={e => onClose()} href="#banner" className="px-6 py-3"> A propos </a>
+                    onClick={e => onClose()} href="#about" className="px-6 py-3"> A propos </a>
                 <a 
                     onClick={e => onClose()} href="#prestations" className="px-6 py-3"> Prestations </a>
                 <a 

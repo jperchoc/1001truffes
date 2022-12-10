@@ -242,7 +242,6 @@ function Testimonials() {
     </div>
   </div>
 </section>
-
     )
 }
 export default Testimonials;

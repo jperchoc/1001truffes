@@ -1,231 +1,95 @@
+import dogSmall from '../assets/dog-small.png';
+import dogMedium from '../assets/dog-medium.png';
+import dogBig from '../assets/dog-big.png';
+import puppy from '../assets/puppy.png';
+import cat from '../assets/cat.png';
+
 function Prestations() {
     return (
         <section id="prestations" className="bg-gray-900 text-white">
-  <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-    <div className="mx-auto max-w-lg text-center">
-      <h2 id="prestations" className="text-3xl font-bold sm:text-4xl">Kickstart your marketing</h2>
+      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-lg text-center">
+          <h2 id="prestations" className="text-3xl font-bold sm:text-4xl">Prestations</h2>
 
-      <p className="mt-4 text-gray-300">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
-        aliquam doloribus nesciunt eos fugiat. Vitae aperiam fugit consequuntur
-        saepe laborum.
-      </p>
-    </div>
+          <p className="mt-4 text-gray-300">Offrez à votre animal un moment bien être sans devoir vous déplacer. </p>
+        </div>
 
-    <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <a
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-teal-500/10 hover:shadow-teal-500/10"
-        href="/services/digital-campaigns"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 text-teal-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
-
-        <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
-
-        <p className="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-          possimus adipisci distinctio alias voluptatum blanditiis laudantium.
-        </p>
-      </a>
-
-      <a
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-teal-500/10 hover:shadow-teal-500/10"
-        href="/services/digital-campaigns"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 text-teal-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
-
-        <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
-
-        <p className="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-          possimus adipisci distinctio alias voluptatum blanditiis laudantium.
-        </p>
-      </a>
-
-      <a
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-teal-500/10 hover:shadow-teal-500/10"
-        href="/services/digital-campaigns"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 text-teal-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
-
-        <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
-
-        <p className="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-          possimus adipisci distinctio alias voluptatum blanditiis laudantium.
-        </p>
-      </a>
-
-      <a
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-teal-500/10 hover:shadow-teal-500/10"
-        href="/services/digital-campaigns"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 text-teal-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
-
-        <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
-
-        <p className="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-          possimus adipisci distinctio alias voluptatum blanditiis laudantium.
-        </p>
-      </a>
-
-      <a
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-teal-500/10 hover:shadow-teal-500/10"
-        href="/services/digital-campaigns"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 text-teal-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
-
-        <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
-
-        <p className="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-          possimus adipisci distinctio alias voluptatum blanditiis laudantium.
-        </p>
-      </a>
-
-      <a
-        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-teal-500/10 hover:shadow-teal-500/10"
-        href="/services/digital-campaigns"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 text-teal-500"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 14l9-5-9-5-9 5 9 5z" />
-          <path
-            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-          />
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-          />
-        </svg>
-
-        <h2 className="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
-
-        <p className="mt-1 text-sm text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-          possimus adipisci distinctio alias voluptatum blanditiis laudantium.
-        </p>
-      </a>
-    </div>
-
-    <div className="mt-12 text-center">
-      <a
-        href="#"
-        className="mt-8 inline-flex items-center rounded border border-teal-600 bg-teal-600 px-8 py-3 text-white hover:bg-transparent focus:outline-none focus:ring active:text-teal-500"
-      >
-        <span className="text-sm font-medium"> Get Started </span>
-
-        <svg
-          className="ml-3 h-5 w-5"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M17 8l4 4m0 0l-4 4m4-4H3"
-          />
-        </svg>
-      </a>
-    </div>
-  </div>
-</section>
+        <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <Card title="Petits chiens" image={dogSmall}>
+              <span className="text-gray-400">Moins de 10kg : York, Cavalier King Charles, Spitz...</span>
+              <PriceBox>
+                  <Price name="Tonte" price="40€" />
+                  <Price name="Coupe ciseaux" price="45€" />
+                  <Price name="Réduction de mue" price="30€/heure" />
+                  <Price name="Epilation" price="35€/heure" />
+              </PriceBox>
+          </Card>
+          <Card title="Chiens moyens" image={dogMedium}>
+              <span className="text-gray-400">De 10kg à 25kg : Cocker, Finnois de Laponie, Berger Australien ...</span>
+              <PriceBox>
+                  <Price name="Tonte" price="50€" />
+                  <Price name="Coupe ciseaux" price="55€" />
+                  <Price name="Réduction de mue" price="40€/heure" />
+                  <Price name="Epilation" price="35€/heure" />
+              </PriceBox>
+          </Card>
+          <Card title="Grands chiens" image={dogBig}>
+              <span className="text-gray-400">Plus de 25kg : Patou, Bouvier, Labrador...</span>
+              <PriceBox>
+                  <Price name="Toilettage classique" price="50€/heure" />
+              </PriceBox>
+            </Card>
+          <Card title="Chiots" image={puppy}>
+              <span className="text-gray-400">Désensibilisation aux bruits et matériels de toilettage.</span>
+              <PriceBox>
+                  <Price name="Initiation au toilettage" price="30€" />
+              </PriceBox>
+            </Card>
+          <Card title="Chats" image={cat}>
+              <span className="text-gray-400">Idéal pour tout type de chats, à poils longs comme à poils courts. Un bain peut être effectué si nécessaire.</span>
+              <PriceBox>
+                  <Price name="Toilettage" price="35€/heure" />
+              </PriceBox>
+            </Card>
+        </div>
+        <p className='mt-2 text-gray-500'>Tarifs pour un animal bien entretenu. Des frais supplémentaires pourront être appliqué en fonction de l’état de votre animal
+( difficulté du démélage, présence de parasites… ). Les prix peuvent également varier selon la sociabilité de l’animal ( morsures,
+griffures … ).</p>
+      </div>
+    </section>
 
     );
+}
+
+function PriceBox({children}) {
+  return (
+    <div className="mt-4 border-y-2 py-4 border-gray-800 bg-gray-800 px-4 rounded-xl">
+      {children}
+  </div>
+  ) 
+}
+
+function Price({name, price}) {
+  return (
+    <div className="flex justify-between">
+          <span>{name}</span>
+          <span className="font-bold text-teal-600">{price}</span>
+      </div>
+  )
+}
+
+function Card({title, image, children}) {
+  return (
+    <div
+        className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-teal-500/10 hover:shadow-teal-500/10"
+        href="/services/digital-campaigns"
+      >
+        <div className='flex justify-center'>
+          <img className="max-h-[120px] invert" src={image} />
+        </div>
+        <h2 className="mt-4 text-xl font-bold text-white">{title}</h2>
+        {children}
+      </div>
+  )
 }
 export default Prestations;
