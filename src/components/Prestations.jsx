@@ -15,7 +15,7 @@ function Prestations() {
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <Card title="Petits chiens" image={dogSmall}>
+          <Card title="Petits chiens" image={dogSmall} imgAlt="Silhouette d'un petit chien">
               <span className="text-gray-400">Moins de 10kg : York, Cavalier King Charles, Spitz...</span>
               <PriceBox>
                   <Price name="Tonte" price="40€" />
@@ -24,7 +24,7 @@ function Prestations() {
                   <Price name="Epilation" price="35€/heure" />
               </PriceBox>
           </Card>
-          <Card title="Chiens moyens" image={dogMedium}>
+          <Card title="Chiens moyens" image={dogMedium} imgAlt="Silhouette d'un chien de taille moyenne">
               <span className="text-gray-400">De 10kg à 25kg : Cocker, Finnois de Laponie, Berger Australien ...</span>
               <PriceBox>
                   <Price name="Tonte" price="50€" />
@@ -33,19 +33,19 @@ function Prestations() {
                   <Price name="Epilation" price="35€/heure" />
               </PriceBox>
           </Card>
-          <Card title="Grands chiens" image={dogBig}>
+          <Card title="Grands chiens" image={dogBig} imgAlt="Silhouette d'un chien de grande taille">
               <span className="text-gray-400">Plus de 25kg : Patou, Bouvier, Labrador...</span>
               <PriceBox>
                   <Price name="Toilettage classique" price="50€/heure" />
               </PriceBox>
             </Card>
-          <Card title="Chiots" image={puppy}>
+          <Card title="Chiots" image={puppy}  imgAlt="Silhouette d'un chiot">
               <span className="text-gray-400">Désensibilisation aux bruits et matériels de toilettage.</span>
               <PriceBox>
                   <Price name="Initiation au toilettage" price="30€" />
               </PriceBox>
             </Card>
-          <Card title="Chats" image={cat}>
+          <Card title="Chats" image={cat} imgAlt="Silhouette d'un chat">
               <span className="text-gray-400">Idéal pour tout type de chats, à poils longs comme à poils courts. Un bain peut être effectué si nécessaire.</span>
               <PriceBox>
                   <Price name="Toilettage" price="35€/heure" />
@@ -78,14 +78,14 @@ function Price({name, price}) {
   )
 }
 
-function Card({title, image, children}) {
+function Card({title, image, imgAlt, children}) {
   return (
     <div
         className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-teal-500/10 hover:shadow-teal-500/10"
         href="/services/digital-campaigns"
       >
         <div className='flex justify-center'>
-          <img className="max-h-[120px] invert" src={image} />
+          <img className="max-h-[120px] invert" src={image} alt={imgAlt} />
         </div>
         <h2 className="mt-4 text-xl font-bold text-white">{title}</h2>
         {children}

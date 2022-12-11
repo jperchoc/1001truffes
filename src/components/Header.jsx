@@ -15,7 +15,7 @@ function Header() {
         >
         <a className="block text-teal-600" href="/">
             <span className="sr-only">Home</span>
-            <img src={logo} className="h-16 w-16"/>
+            <img src={logo} className="h-16 w-16" alt="Logo de 1001 truffes."/>
         </a>
 
         <div className="flex flex-1 items-center justify-end md:justify-between">
@@ -77,11 +77,11 @@ function Header() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                stroke-width="2"
+                strokeWidth="2"
                 >
                 <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M4 6h16M4 12h16M4 18h16"
                 />
                 </svg>
@@ -120,9 +120,9 @@ function MobileMenu({onClose}) {
                     stroke="currentColor"
                     >
                     <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M6 18L18 6M6 6l12 12"
                     />
                     </svg>
