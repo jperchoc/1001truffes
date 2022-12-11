@@ -12,7 +12,7 @@ function Footer() {
           </h2>
 
           <p className="max-w-md mx-auto mt-4 text-gray-500">
-            Je me déplace sur <strong>Ploumoguer est ses alentours</strong> afin de prendre soin de votre animal. Je dispose de mon propre matériel, seuls un accès à l'eau et à l'electricité est nécessaire.
+            Je me déplace sur <strong>Ploumoguer et ses alentours</strong> afin de prendre soin de votre animal. Je dispose de mon propre matériel, seuls un accès à l'eau et à l'electricité est nécessaire.
           </p>
           <div className="text-gray-500 w-48 mx-auto mt-4">
             <div className="flex justify-between"><span>Lundi</span><span>09h00 - 18h00</span></div>
