@@ -16,18 +16,23 @@ function Legal({visible, onClose}) {
                     <li><strong>Tél : </strong>07 64 88 99 23</li>
                     <li><strong>Mail : </strong>1001truffes.toilettage@gmail.com</li>
                     <li><strong>Siren : </strong>921940573</li>
-                    <li><strong>Site web : </strong><a className="text-teal-700" href="https://1001-truffes.fr/" >1001-truffes.fr</a></li>
+                    <li><strong>Site web : </strong><a className="text-teal-700" href="https://1001-truffes.fr/" target="_blank">1001-truffes.fr</a></li>
                 </ul>
 
                 <h2 className='mt-4 mb-2 font-bold text-xl text-gray-800'>Hébergement</h2>
                 <ul>
-                    <li><a className="text-teal-700" href="http://ovhcloud.com" >OvhCloud</a></li>
+                    <li><a className="text-teal-700" href="http://ovhcloud.com" target="_blank">OvhCloud</a></li>
                     <li>2 rue Kellermann - 59100 Roubaix - France</li>
                 </ul>
 
                 <h2 className='mt-4 mb-2 font-bold text-xl text-gray-800'>Crédits</h2>
                 <p className='mt-4'>
-                    Photos: <a className="text-teal-700" href="https://www.facebook.com/BubbleLifePhoto">Studio Bubble Life</a> & <a className="text-teal-700" href="https://www.facebook.com/celineartstudio">Céline Art Studio</a>
+                    <ul>
+                        <li>
+                            Photos: <a className="text-teal-700" href="https://www.facebook.com/BubbleLifePhoto" target="_blank">Studio Bubble Life</a> & <a className="text-teal-700" href="https://www.facebook.com/celineartstudio" target="_blank">Céline Art Studio</a>
+                        </li>
+                        <li>Assets: <a className="text-teal-700" href="https://stock.adobe.com/" target="_blank">stock.adobe.com</a></li>
+                    </ul>
                 </p>
 
             </div>
