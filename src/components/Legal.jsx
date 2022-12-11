@@ -31,7 +31,8 @@ function Legal({visible, onClose}) {
                         <li>
                             Photos: <a className="text-teal-700" href="https://www.facebook.com/BubbleLifePhoto" target="_blank">Studio Bubble Life</a> & <a className="text-teal-700" href="https://www.facebook.com/celineartstudio" target="_blank">Céline Art Studio</a>
                         </li>
-                        <li>Assets: <a className="text-teal-700" href="https://stock.adobe.com/" target="_blank">stock.adobe.com</a></li>
+                        <li>Logo : <a className="text-teal-700" href="https://www.instagram.com/tattooby_mai" target="_blank">Mai Tattoo Artist</a></li>
+                        <li>Assets : <a className="text-teal-700" href="https://stock.adobe.com/" target="_blank">stock.adobe.com</a></li>
                     </ul>
                 </p>
 
