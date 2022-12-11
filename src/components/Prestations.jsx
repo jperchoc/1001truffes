@@ -34,7 +34,7 @@ function Prestations() {
               </PriceBox>
           </Card>
           <Card title="Grands chiens" image={dogBig} imgAlt="Silhouette d'un chien de grande taille">
-              <span className="text-gray-400">Plus de 25kg : Patou, Bouvier, Labrador...</span>
+              <span className="text-gray-400">Plus de 25kg : Patou des Pyrénées, Bouvier Bernois, Labrador...</span>
               <PriceBox>
                   <Price name="Toilettage classique" price="50€/heure" />
               </PriceBox>
@@ -82,7 +82,6 @@ function Card({title, image, imgAlt, children}) {
   return (
     <div
         className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-teal-500/10 hover:shadow-teal-500/10"
-        href="/services/digital-campaigns"
       >
         <div className='flex justify-center'>
           <img className="max-h-[120px] invert" src={image} alt={imgAlt} />

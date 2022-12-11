@@ -1,4 +1,8 @@
+import { useState } from "react";
+import Legal from "./Legal";
+
 function Footer() {
+  const [showLegal, setShowLegal] = useState(false);
   return (
     <footer aria-label="Site Footer" className="bg-white" id="contact">
       <div className="max-w-screen-xl px-4 pt-16 pb-8 mx-auto sm:px-6 lg:px-8 lg:pt-24">
@@ -7,10 +11,17 @@ function Footer() {
             Contacter
           </h2>
 
-          <p className="max-w-sm mx-auto mt-4 text-gray-500">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
-            maiores ipsum eos temporibus ea nihil.
+          <p className="max-w-md mx-auto mt-4 text-gray-500">
+            Je me déplace sur <strong>Ploumoguer est ses alentours</strong> afin de prendre soin de votre animal. Je dispose de mon propre matériel, seuls un accès à l'eau et à l'electricité est nécessaire.
           </p>
+          <div className="text-gray-500 w-48 mx-auto mt-4">
+            <div className="flex justify-between"><span>Lundi</span><span>09h00 - 18h00</span></div>
+            <div className="flex justify-between"><span>Mardi</span><span>09h00 - 18h00</span></div>
+            <div className="flex justify-between"><span>Mercredi</span><span>09h00 - 18h00</span></div>
+            <div className="flex justify-between"><span>Jeudi</span><span>09h00 - 18h00</span></div>
+            <div className="flex justify-between"><span>Vendredi</span><span>09h00 - 18h00</span></div>
+          </div>
+          <p className="text-gray-500 mt-4">N'hésitez pas à <strong>me contacter</strong> afin de prendre rendez-vous</p>
 
           <a
             href="mailto:1001truffes.toilettage@gmail.com"
@@ -33,12 +44,12 @@ function Footer() {
               <span>Tous droits réservés © 1001 Truffes | {new Date().getFullYear()}</span>
               </li>
               <li>
-                <a
-                  href="#"
+                <button
                   className="text-gray-500 transition hover:opacity-75"
+                  onClick={() => setShowLegal(true)}
                 >
                   Mentions légales
-                </a>
+                </button>
               </li>
             </ul>
           </nav>
@@ -94,6 +105,7 @@ function Footer() {
           </ul>
         </div>
       </div>
+      <Legal visible={showLegal} onClose={() => setShowLegal(false)}/>
     </footer>
   );
 }

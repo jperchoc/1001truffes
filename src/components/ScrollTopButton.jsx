@@ -17,7 +17,7 @@ function ScrollTopButton() {
         
     return (
         <a
-          className={`hidden ${visible ? 'md:block':'hidden'} fixed right-5 bottom-5 rounded-full border border-indigo-600 p-3 text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500`}
+          className={`hidden ${visible ? 'md:block':'hidden'} fixed right-5 bottom-16 rounded-full border border-indigo-600 p-3 text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500`}
           href="#top"
         >
           <span className="sr-only">Back to top</span>

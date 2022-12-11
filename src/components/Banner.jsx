@@ -61,7 +61,7 @@ function Banner() {
                 </div>
               </a>
             </strong>
-            <div className="flex mt-2">
+            <div className="flex mt-4">
               <a
                   href="https://www.facebook.com/profile.php?id=100085509908805"
                   rel="noreferrer"
