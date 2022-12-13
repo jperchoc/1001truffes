@@ -52,7 +52,7 @@ function Prestations() {
               </PriceBox>
             </Card>
         </div>
-        <p className='mt-2 text-gray-500'>Tarifs pour un animal bien entretenu. Des frais supplémentaires pourront être appliqué en fonction de l’état de votre animal
+        <p className='mt-2 text-gray-500'>Tarifs pour un animal bien entretenu. Des frais supplémentaires pourront être appliqués en fonction de l’état de votre animal
 ( difficulté du démélage, présence de parasites… ). Les prix peuvent également varier selon la sociabilité de l’animal ( morsures,
 griffures … ).</p>
       </div>

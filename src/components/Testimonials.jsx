@@ -1,5 +1,6 @@
-import {AiFillStar, AiOutlineStar } from 'react-icons/ai'
-const imgWoman1 = "https://images.unsplash.com/photo-1599566219227-2efe0c9b7f5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80";
+import {AiFillStar, AiOutlineStar } from 'react-icons/ai';
+import stella from '../assets/stella.jpg';
+
 const imgWoman2 = "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
 const imgWoman3 = "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80";
 function Testimonials() {
@@ -19,8 +20,8 @@ function Testimonials() {
     <div
       className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16 lg:grid-cols-3"
     >
-      <Testimonial img={imgWoman1} imgAlt="Photographie d'une femme" ratings={5} name="Sophie Lennon" infos="Propriétaire de TruffoMax">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio delectus officiis, mollitia voluptatibus consequatur labore.
+      <Testimonial img={stella} imgAlt="Photographie de Stella, chien Westie toiléttée par Mathilde." ratings={5} name="Bruno" infos="Propriétaire de Stella">
+      Je remercie Mathilde pour sa douceur,sa patience et son professionnalisme. Stella est très belle après sa séance de toilettage par épilation et sans stress. Mathilde est une personne très passionnée par son métier. Stella adore ses rdv avec Mathilde. 
       </Testimonial>
       <Testimonial img={imgWoman2} imgAlt="Photographie d'une femme" ratings={4} name="Aurélie Star" infos="Propriétaire de Scrougnifou">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quas eum natus nam voluptatum, animi ratione accusantium saepe, nemo iure veniam porro impedit in?

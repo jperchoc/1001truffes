@@ -39,14 +39,14 @@ function Banner() {
           </h1>
 
           <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-            Avec 1001 Truffes, prenez rendez-vous pour un toilettage à domicile de votre chien ou de votre chat. Sur rendez-vous du lundi au samedi. 
+            Avec 1001 Truffes, prenez rendez-vous pour un toilettage à domicile de votre chien ou de votre chat. Sur rendez-vous du lundi au vendredi. 
           </p>
 
           <div className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
             <strong className="block font-extrabold text-teal-700 transition hover:opacity-75">
               <a 
                 href="tel:+33764889923">
-                <div className="flex items-center">
+                <div className="flex items-center mb-4">
                   <MdLocalPhone className="mr-2"/> 
                   <span>07 64 88 99 23</span>
                 </div>
