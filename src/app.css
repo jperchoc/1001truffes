@@ -1,0 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
