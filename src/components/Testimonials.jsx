@@ -18,16 +18,10 @@ function Testimonials() {
     </div>
 
     <div
-      className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16 lg:grid-cols-3"
+      className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-1 sm:gap-16 lg:grid-cols-1"
     >
       <Testimonial img={stella} imgAlt="Photographie de Stella, chien Westie toiléttée par Mathilde." ratings={5} name="Bruno" infos="Propriétaire de Stella">
       Je remercie Mathilde pour sa douceur,sa patience et son professionnalisme. Stella est très belle après sa séance de toilettage par épilation et sans stress. Mathilde est une personne très passionnée par son métier. Stella adore ses rdv avec Mathilde. 
-      </Testimonial>
-      <Testimonial img={imgWoman2} imgAlt="Photographie d'une femme" ratings={4} name="Aurélie Star" infos="Propriétaire de Scrougnifou">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quas eum natus nam voluptatum, animi ratione accusantium saepe, nemo iure veniam porro impedit in?
-      </Testimonial>
-      <Testimonial img={imgWoman3} imgAlt="Photographie d'une femme" ratings={5} name="Gwendoline Traffaouelan" infos="Propriétaire de PierreMinet">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt magnam deleniti, vero odit ad sapiente architecto optio aut? Commodi libero possimus rerum eveniet dolore perferendis fuga, cum voluptatum minima ipsam recusandae esse?
       </Testimonial>
     </div>
   </div>
