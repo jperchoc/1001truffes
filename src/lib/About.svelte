@@ -19,7 +19,7 @@
 
                 <p class="mt-4 text-gray-600">Je m’appelle Mathilde, j’habite Ploumoguer et pour janvier 2023 je deviens votre toiletteuse à domicile.</p>
                 <p class="mt-4 text-gray-600">Je suis une passionnée d’animaux depuis toute petite. Depuis toujours, les chiens et les chats occupent une place privilégiée au sein de ma famille.</p>
-                <p class="mt-4 text-gray-600">Certain(e)s d’entre vous me connaisse déjà pour avoir pris soin de vous.</p>
+                <p class="mt-4 text-gray-600">Certain(e)s d’entre vous me connaissent déjà pour avoir pris soin de vous.</p>
                 <p class="mt-4 text-gray-600">Après avoir été esthéticienne pendant 8 ans, j’ai décidé de faire une reconversion professionnelle pour prendre soin de vos compagnons à quatre pattes.</p>
                 <p class="mt-4 text-gray-600">Mes compétences d’esthéticienne sont un atout pour ce métier, car j’aurai déjà cette attention particulière pour prendre soin de vos animaux, avec la même volonté de perfection que je donnais à mes prestations en esthétique.</p>
                 <p class="mt-4 text-gray-600">Diplomée d’un certificat de « toiletteur canin confirmé » auprès de l’établissement AUDRECO formation, je m’occuperai aussi bien de tous vos chiens et aussi vos chats.</p>
