@@ -1,6 +1,7 @@
 <script lang="ts">
     import Testimonial from './Testimonial.svelte';
     import stella from '../assets/stella.jpg';
+    import iago from '../assets/iago.jpg';
 </script>
 
 <section id="testimonials" class="bg-white">
@@ -16,8 +17,11 @@
       </div>
   
       <div
-        class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-1 sm:gap-16 lg:grid-cols-1"
+        class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16 lg:grid-cols-2"
       >
+        <Testimonial img={iago} imgAlt="Photographie de Iago, chien Finnois de Laponie toilétté par Mathilde" ratings={5} name="Justine" infos="Propriétaire de Iago">
+          Professionnelle consciencieuse et très soucieuse du bien-être animal. Elle sait prendre en considération les doléances des maîtres mais aussi le caractère de chaque chien !
+        </Testimonial>
         <Testimonial img={stella} imgAlt="Photographie de Stella, chien Westie toiléttée par Mathilde." ratings={5} name="Bruno" infos="Propriétaire de Stella">
         Je remercie Mathilde pour sa douceur,sa patience et son professionnalisme. Stella est très belle après sa séance de toilettage par épilation et sans stress. Mathilde est une personne très passionnée par son métier. Stella adore ses rdv avec Mathilde. 
         </Testimonial>
