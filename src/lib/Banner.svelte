@@ -29,7 +29,7 @@
     <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
       <div class="max-w-xl text-center sm:text-left">
         <h1 class="text-3xl font-extrabold sm:text-5xl">
-          Chouchoutez votre animal
+          1001 Truffes - Chouchoutez votre animal
           <strong class="block font-extrabold text-teal-700">
             à domicile.
           </strong>

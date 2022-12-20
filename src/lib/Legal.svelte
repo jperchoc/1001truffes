@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { fly, fade } from 'svelte/transition';
     import { createEventDispatcher } from 'svelte';
     export let visible: boolean;
     const dispatch = createEventDispatcher();
@@ -8,8 +9,9 @@
 </script>
 
 {#if visible}
-<div id="overlay" class="fixed z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60" on:click={() => close()} on:keydown={() => close()}></div>
+<div transition:fade id="overlay" class="fixed z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60" on:click={() => close()} on:keydown={() => close()}></div>
 <div id="dialog"
+    transition:fly="{{ y: -200, duration: 300 }}" 
     class="w-full md:max-w-screen-xl fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md px-8 py-6 space-y-5 drop-shadow-lg">
     <h1 class="text-2xl font-extrabold text-gray-900">Mentions légales</h1>
     <div class="py-5 border-t border-b border-gray-300 text-gray-500">

@@ -13,7 +13,7 @@
         class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8"
         >
         <a class="block text-teal-600" href="/">
-            <span class="sr-only">Home</span>
+            <span class="sr-only">1001 Truffes</span>
             <img src={logo} class="h-16 w-16" alt="Logo de 1001 truffes."/>
         </a>
 

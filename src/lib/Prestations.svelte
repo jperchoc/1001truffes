@@ -74,8 +74,6 @@
             </div>
         </PrestationCard>
       </div>
-      <p class='mt-2 text-gray-500'>Tarifs pour un animal bien entretenu. Des frais supplémentaires pourront être appliqués en fonction de l’état de votre animal
-( difficulté du démélage, présence de parasites… ). Les prix peuvent également varier selon la sociabilité de l’animal ( morsures,
-griffures … ).</p>
+      <p class='mt-4 text-gray-500'>Tarifs pour un animal bien entretenu. Des frais supplémentaires pourront être appliqués en fonction de l’état de votre animal (difficulté du démélage, présence de parasites...). Les prix peuvent également varier selon la sociabilité de l’animal (morsures, griffures...).</p>
     </div>
 </section>
