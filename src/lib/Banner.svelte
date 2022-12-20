@@ -1,5 +1,7 @@
 <script lang="ts">
     import { onDestroy } from 'svelte';
+    import MdMail from 'svelte-icons/md/MdMail.svelte'
+    import MdLocalPhone from 'svelte-icons/md/MdLocalPhone.svelte'
     import img1 from '../assets/img1.jpg';
     import img2 from '../assets/img2.jpg';
     import img3 from '../assets/img3.jpg';
@@ -44,7 +46,9 @@
             <a 
               href="tel:+33764889923">
               <div class="flex items-center mb-4">
-                <!-- <MdLocalPhone class="mr-2"/>  -->
+                <div class="icon mr-2">
+                  <MdLocalPhone/>
+                </div> 
                 <span>07 64 88 99 23</span>
               </div>
             </a>
@@ -53,7 +57,9 @@
             <a 
               href="mailto:1001truffes.toilettage@gmail.com">
               <div class="flex items-center">
-                <!-- <MdMail class="mr-2"/>  -->
+                <div class="icon mr-2">
+                  <MdMail/> 
+                </div>
                 <span>1001truffes.toilettage@gmail.com</span>
               </div>
             </a>
