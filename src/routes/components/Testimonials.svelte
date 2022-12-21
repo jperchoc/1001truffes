@@ -1,7 +1,7 @@
 <script lang="ts">
     import Testimonial from './Testimonial.svelte';
-    import stella from '../assets/stella.jpg';
-    import iago from '../assets/iago.jpg';
+    import stella from '../../assets/stella.jpg';
+    import iago from '../../assets/iago.jpg';
 </script>
 
 <section id="testimonials" class="bg-white">

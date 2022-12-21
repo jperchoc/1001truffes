@@ -1,15 +1,20 @@
 <script lang="ts">
+    import { browser } from '$app/environment';
     let visible = false;
-    const toggleVisible = () => {
-        const scrolled = document.documentElement.scrollTop;
-        if (scrolled > 300){
-            visible = true;
-        } 
-        else if (scrolled <= 300){
-            visible = false;
-        }
-    };
-    window.addEventListener('scroll', toggleVisible);
+    
+    if (browser) {
+        const toggleVisible = () => {
+            const scrolled = document.documentElement.scrollTop;
+            if (scrolled > 300){
+                visible = true;
+            } 
+            else if (scrolled <= 300){
+                visible = false;
+            }
+        };
+        window.addEventListener('scroll', toggleVisible);
+    }
+    
 </script>
 <a
     class={`hidden ${visible ? 'md:block':'hidden'} fixed right-5 bottom-16 rounded-full border border-indigo-600 p-3 text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500`}

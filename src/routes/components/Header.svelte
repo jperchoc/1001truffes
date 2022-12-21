@@ -1,5 +1,5 @@
 <script lang="ts">
-    import logo from '../assets/logo.png'
+    import logo from '../../assets/logo.png'
     import MdMail from 'svelte-icons/md/MdMail.svelte'
     import MdLocalPhone from 'svelte-icons/md/MdLocalPhone.svelte'
     let showMenu: boolean = false;

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import image from '../assets/img5.jpg';
+    import image from '../../assets/img5.jpg';
     import AboutBadge from './AboutBadge.svelte';
 </script>
 <section id="about">

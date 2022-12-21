@@ -1,5 +1,5 @@
-<script>
-    export let title;
+<script lang="ts">
+    export let title:string;
 </script>
 <div class="flex items-start">
     <span class="flex-shrink-0 rounded-lg p-4 border border-teal-700 text-teal-700">

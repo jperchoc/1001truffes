@@ -1,6 +1,6 @@
 <script lang="ts">
-    import FaStar from 'svelte-icons/fa/FaStar.svelte'
-    import FaRegStar from 'svelte-icons/fa/FaRegStar.svelte'
+    import FaStar from 'svelte-icons/fa/FaStar.svelte';
+    import FaRegStar from 'svelte-icons/fa/FaRegStar.svelte';
     export let imgAlt: string;
     export let img: string;
     export let name: string;
