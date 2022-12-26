@@ -1,6 +1,6 @@
 <script lang="ts">
-    import PrestationCard from "./PrestationCard.svelte";
-    import PrestationPrice from "./PrestationPrice.svelte";
+    import PrestationCard from "../UI/PrestationCard.svelte";
+    import PrestationPrice from "../UI/PrestationPrice.svelte";
 </script>
 
 <section id="prestations" class="bg-gray-900 text-white">

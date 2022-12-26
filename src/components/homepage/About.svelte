@@ -1,6 +1,6 @@
 <script lang="ts">
     import image from '../../assets/img5.jpg';
-    import AboutBadge from './AboutBadge.svelte';
+    import AboutBadge from '../UI/AboutBadge.svelte';
 </script>
 <section id="about">
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">

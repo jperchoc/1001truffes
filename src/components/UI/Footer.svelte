@@ -1,43 +1,11 @@
 <script lang="ts">
-    import Legal from "./Legal.svelte";
-
-
+    import Legal from "../homepage/Legal.svelte";
     let showLegal:boolean = false;
     const setShowLegal = (value: boolean) => showLegal = value;
 </script>
+
 <footer aria-label="Site Footer" class="bg-white" id="contact">
-    <div class="max-w-screen-xl px-4 pt-16 pb-8 mx-auto sm:px-6 lg:px-8 lg:pt-24">
-      <div class="text-center">
-        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-5xl">
-          Contacter
-        </h2>
-
-        <p class="max-w-md mx-auto mt-4 text-gray-500">
-          Je me déplace sur <strong>Ploumoguer et ses alentours</strong> afin de prendre soin de votre animal. Je dispose de mon propre matériel, seuls un accès à l'eau et à l'electricité est nécessaire.
-        </p>
-        <div class="text-gray-500 w-48 mx-auto mt-4">
-          <div class="flex justify-between"><span>Lundi</span><span>09h00 - 18h00</span></div>
-          <div class="flex justify-between"><span>Mardi</span><span>09h00 - 18h00</span></div>
-          <div class="flex justify-between"><span>Mercredi</span><span>09h00 - 18h00</span></div>
-          <div class="flex justify-between"><span>Jeudi</span><span>09h00 - 18h00</span></div>
-          <div class="flex justify-between"><span>Vendredi</span><span>09h00 - 18h00</span></div>
-        </div>
-        <p class="text-gray-500 mt-4">N'hésitez pas à <strong>me contacter</strong> afin de prendre rendez-vous</p>
-
-        <a
-          href="mailto:1001truffes.toilettage@gmail.com"
-          class="mr-2 inline-block px-12 py-3 mt-8 text-sm font-medium text-teal-600 border border-teal-600 rounded-full hover:bg-teal-600 hover:text-white focus:outline-none focus:ring active:bg-teal-500"
-        >
-          Par e-mail
-        </a>
-        <a
-          href="tel:+33764889923"
-          class="ml-2 inline-block px-12 py-3 mt-8 text-sm font-medium text-teal-600 border border-teal-600 rounded-full hover:bg-teal-600 hover:text-white focus:outline-none focus:ring active:bg-teal-500"
-        >
-          Par téléphone
-        </a>
-      </div>
-
+    <div class="max-w-screen-xl px-4 pt-2 pb-8 mx-auto sm:px-6 lg:px-8 lg:pt-4">
       <div class="pt-8 mt-16 border-t border-gray-100 sm:flex sm:items-center sm:justify-between lg:mt-24">
         <nav aria-label="Footer Navigation - Support">
           <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
