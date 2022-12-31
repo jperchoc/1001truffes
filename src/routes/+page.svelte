@@ -4,10 +4,12 @@
 	import Banner from "../components/homepage/Banner.svelte";
 	import Prestations from "../components/homepage/Prestations.svelte";
 	import Testimonials from "../components/homepage/Testimonials.svelte";
+	import Gallery from "../components/homepage/Gallery.svelte";
 </script>
 
 <Banner />
 <About />
 <Prestations />
 <Testimonials />
+<Gallery />
 <Contact />

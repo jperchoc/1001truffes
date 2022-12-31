@@ -21,25 +21,31 @@
             <nav aria-label="Site Nav" class="hidden md:block">
             <ul class="flex items-center gap-6 text-sm">
                 <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="#about">
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="/#about">
                     A propos
                 </a>
                 </li>
 
                 <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="#prestations">
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="/#prestations">
                     Prestations
                 </a>
                 </li>
 
                 <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="#testimonials">
+                    <a class="text-gray-500 transition hover:text-gray-500/75" href="/#gallery">
+                        Galerie
+                    </a>
+                </li>
+
+                <li>
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="/#testimonials">
                     Avis
                 </a>
                 </li>
 
                 <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="#contact">
+                <a class="text-gray-500 transition hover:text-gray-500/75" href="/#contact">
                     Contacter
                 </a>
                 </li>
@@ -131,13 +137,15 @@
                 class="flex flex-col divide-y divide-gray-200 border-t border-b border-gray-200 text-sm font-medium text-gray-500"
                 >
                 <a 
-                    on:click={e => setMenu(false)} href="#about" class="px-6 py-3"> A propos </a>
+                    on:click={e => setMenu(false)} href="/#about" class="px-6 py-3"> A propos </a>
                 <a 
-                    on:click={e => setMenu(false)} href="#prestations" class="px-6 py-3"> Prestations </a>
+                    on:click={e => setMenu(false)} href="/#prestations" class="px-6 py-3"> Prestations </a>
                 <a 
-                    on:click={e => setMenu(false)}  href="#testimonials" class="px-6 py-3"> Avis </a>
+                    on:click={e => setMenu(false)} href="/#gallery" class="px-6 py-3"> Galerie </a>
                 <a 
-                    on:click={e => setMenu(false)}  href="#contact" class="px-6 py-3"> Contacter </a>
+                    on:click={e => setMenu(false)}  href="/#testimonials" class="px-6 py-3"> Avis </a>
+                <a 
+                    on:click={e => setMenu(false)}  href="/#contact" class="px-6 py-3"> Contacter </a>
             
                 </nav>
             </div>

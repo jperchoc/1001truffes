@@ -1,12 +1,16 @@
 <script lang="ts">
     import Legal from "../homepage/Legal.svelte";
     let showLegal:boolean = false;
-    const setShowLegal = (value: boolean) => showLegal = value;
+    function setShowLegal(value: boolean) {
+      showLegal = value;
+      const bodyElem = window.document.getElementsByTagName('body')[0];
+      bodyElem.style.overflow = showLegal ? 'hidden' : 'auto';
+    }
 </script>
 
-<footer aria-label="Site Footer" class="bg-white" id="contact">
-    <div class="max-w-screen-xl px-4 pt-2 pb-8 mx-auto sm:px-6 lg:px-8 lg:pt-4">
-      <div class="pt-8 mt-16 border-t border-gray-100 sm:flex sm:items-center sm:justify-between lg:mt-24">
+<footer aria-label="Site Footer" class="bg-white">
+    <div class="max-w-screen-xl px-4 pt-2 pb-8 mx-auto sm:px-6">
+      <div class="border-t border-gray-100 sm:flex sm:items-center sm:justify-between">
         <nav aria-label="Footer Navigation - Support">
           <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
             <li>

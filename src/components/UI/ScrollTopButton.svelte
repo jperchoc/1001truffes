@@ -17,7 +17,7 @@
     
 </script>
 <a
-    class={`hidden ${visible ? 'md:block':'hidden'} fixed right-5 bottom-16 rounded-full border border-indigo-600 p-3 text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500`}
+    class={`hidden ${visible ? 'md:block':'hidden'} fixed right-5 bottom-16 rounded-full border border-teal-600 p-3 text-teal-600 hover:bg-teal-600 hover:text-white focus:outline-none focus:ring active:bg-teal-500`}
     href="#top"
 >
     <span class="sr-only">Back to top</span>

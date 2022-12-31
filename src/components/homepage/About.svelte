@@ -78,7 +78,7 @@
                                 C92.697,183.321,94.242,177.323,95.432,173.002z M214.352,188.314v-47.169h40.821c7.316,0,14.235,3.868,18.062,10.1l22.807,37.069
                                 H214.352z"/>
                         </svg>
-                        Je me déplace chez vous, avec tout le matériel nécessaire pour toiletter votre compagnon dans les meilleures conditions.
+                        Je me déplace chez vous, avec tout le matériel nécessaire pour toiletter votre animal de compagnie dans les meilleures conditions.
                     </AboutBadge>
                    
                 </div>
