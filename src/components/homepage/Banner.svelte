@@ -10,16 +10,16 @@
    
 
     const images = [
+        img2,
         img5,
         img1,
-        img2,
         img3,
         img4
     ]
     let imageIndex = 0;
     const interval = setInterval(() => {
        imageIndex = (imageIndex+1) % images.length;
-    }, 10000)
+    }, 5000)
 
     onDestroy(() => clearInterval(interval));
 </script>
@@ -48,7 +48,7 @@
           <strong class="block font-extrabold text-teal-700 transition hover:opacity-75">
             <a 
               href="tel:+33764889923">
-              <div class="flex items-center mb-4">
+              <div class="flex items-center mb-4 border-solid w-fit py-2 px-4 bg-teal-700 text-slate-200 rounded-full">
                 <div class="icon mr-2">
                   <MdLocalPhone/>
                 </div> 
