@@ -21,13 +21,13 @@
 
 		<a
 			href="mailto:1001truffes.toilettage@gmail.com"
-			class="mr-2 inline-block px-12 py-3 mt-8 text-sm font-medium text-teal-600 border border-teal-600 rounded-full hover:bg-teal-600 hover:text-white focus:outline-none focus:ring active:bg-teal-500"
+			class="w-full sm:w-auto mr-2 inline-block px-12 py-3 mt-8 text-sm font-medium text-teal-600 border border-teal-600 rounded-full hover:bg-teal-600 hover:text-white focus:outline-none focus:ring active:bg-teal-500"
 		>
 			Par e-mail
 		</a>
 		<a
 			href="tel:+33764889923"
-			class="ml-2 inline-block px-12 py-3 mt-8 text-sm font-medium text-teal-600 border border-teal-600 rounded-full hover:bg-teal-600 hover:text-white focus:outline-none focus:ring active:bg-teal-500"
+			class="w-full sm:w-auto ml-0 sm:ml-2 inline-block px-12 py-3 mt-8 text-sm font-medium text-teal-600 border border-teal-600 rounded-full hover:bg-teal-600 hover:text-white focus:outline-none focus:ring active:bg-teal-500"
 		>
 			Par téléphone
 		</a>

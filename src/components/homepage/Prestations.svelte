@@ -110,7 +110,7 @@
 				</div>
 				<div slot="content">
 					<span class="text-gray-400"
-						>Préstation adaptée aux Cockers, épilation, tonte ou coupe.</span
+						>Prestation adaptée aux Cockers, épilation, tonte ou coupe.</span
 					>
 					<div class="mt-4 border-y-2 py-4 border-gray-800 bg-gray-800 px-4 rounded-xl">
 						<PrestationPrice name="Toilettage 2 heures" price="65€" />

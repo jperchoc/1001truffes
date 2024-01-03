@@ -62,9 +62,9 @@
 <section class="bg-gray-900 text-white" id="gallery">
 	<div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
 		<div class="mx-auto max-w-lg text-center">
-			<h2 id="prestations" class="text-3xl font-bold sm:text-4xl">Galerie photo</h2>
+			<h2 id="gallery" class="text-3xl font-bold sm:text-4xl">Galerie photo</h2>
 		</div>
-		<div class="container px-5 py-2 mx-auto lg:px-32">
+		<div class="py-2">
 			<div
 				class="overflow-hidden bg-gray-950/30 rounded-md"
 				use:emblaCarouselSvelte={{ options, plugins: [] }}
@@ -74,10 +74,10 @@
 					{#each slides as slide}
 						<div class="grow-0 shrink-0 basis-full">
 							<enhanced:img
-								loading="lazy"
-								class="block w-full object-contain h-96 lg:h-[650px] bg-gray-800"
+								class="block w-full object-contain h-96 md:h-[650px] bg-gray-800"
 								alt=""
 								src={imageByIndex(slide)}
+								sizes="(min-width:700px) 1280px, (min-width:368px) 400px"
 							/>
 						</div>
 					{/each}
@@ -92,8 +92,8 @@
 					<div class="flex mx-2">
 						{#each slides as index}
                             <div class="{index == selectedIndex ? 'border border-teal-700' : ''} 
-                                p-2 flex flex-grow-0 flex-shrink-0 basis-1/5 lg:basis-1/12">
-                            <button on:click={() => onThumbClick(index)} class="block w-full h-24 relative overflow-hidden" type="button">
+                                p-2 flex flex-grow-0 flex-shrink-0 basis-1/5 md:basis-1/12">
+                            <button on:click={() => onThumbClick(index)} class="block w-full h-12 md:h-24 relative overflow-hidden" type="button">
                                 <enhanced:img loading="lazy" class="block w-full h-full object-cover bg-gray-600" src={imageByIndex(index)} alt="" />
                             </button>
                             </div>
