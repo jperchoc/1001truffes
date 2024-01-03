@@ -3,26 +3,6 @@
 		type EmblaCarouselType,
 		type EmblaOptionsType
 	} from 'embla-carousel-svelte';
-	import img1 from '$lib/assets/gallery/albumB&A-231.jpg';
-	import img2 from '../../assets/gallery/albumB&A-235.jpg';
-	import img3 from '../../assets/gallery/albumB&A-225.jpg';
-	import img4 from '../../assets/gallery/albumB&A-263.jpg';
-	import img5 from '../../assets/gallery/albumB&A-213.jpg';
-	import img6 from '../../assets/gallery/albumB&A-212.jpg';
-
-	import img7 from '../../assets/gallery/highlight-1.jpg';
-	import img8 from '../../assets/gallery/highlight-2.jpg';
-	import img9 from '../../assets/gallery/highlight-3.jpg';
-	import img10 from '../../assets/gallery/highlight-4.jpg';
-	import img11 from '../../assets/gallery/highlight-5.jpg';
-	import img12 from '../../assets/gallery/highlight-6.jpg';
-	import img13 from '../../assets/gallery/highlight-7.jpg';
-	import img14 from '../../assets/gallery/highlight-8.jpg';
-	import img15 from '../../assets/gallery/highlight-9.jpg';
-	import img16 from '../../assets/gallery/highlight-10.jpg';
-
-
-	//const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16];
     const images =  import.meta.glob(
 	'./../../assets/gallery/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}', { eager: true }) as Record<string, { default: string}>;
 	const options = {};
