@@ -1,101 +1,123 @@
 <script lang="ts">
-    import MdClose from 'svelte-icons/md/MdClose.svelte'
-    import { fly, fade } from 'svelte/transition';
-    import img1 from '../../assets/gallery/albumB&A-231.jpg';
-    import img2 from '../../assets/gallery/albumB&A-235.jpg';
-    import img3 from '../../assets/gallery/albumB&A-225.jpg';
-    import img4 from '../../assets/gallery/albumB&A-263.jpg';
-    import img5 from '../../assets/gallery/albumB&A-213.jpg';
-    import img6 from '../../assets/gallery/albumB&A-212.jpg';
-	import ZoomableImage from '../UI/ZoomableImage.svelte';
+	import emblaCarouselSvelte, {
+		type EmblaCarouselType,
+		type EmblaOptionsType
+	} from 'embla-carousel-svelte';
+	import img1 from '$lib/assets/gallery/albumB&A-231.jpg';
+	import img2 from '../../assets/gallery/albumB&A-235.jpg';
+	import img3 from '../../assets/gallery/albumB&A-225.jpg';
+	import img4 from '../../assets/gallery/albumB&A-263.jpg';
+	import img5 from '../../assets/gallery/albumB&A-213.jpg';
+	import img6 from '../../assets/gallery/albumB&A-212.jpg';
 
-    const images = [
-        img1,img2,img3,img4,img5,img6
-    ]
+	import img7 from '../../assets/gallery/highlight-1.jpg';
+	import img8 from '../../assets/gallery/highlight-2.jpg';
+	import img9 from '../../assets/gallery/highlight-3.jpg';
+	import img10 from '../../assets/gallery/highlight-4.jpg';
+	import img11 from '../../assets/gallery/highlight-5.jpg';
+	import img12 from '../../assets/gallery/highlight-6.jpg';
+	import img13 from '../../assets/gallery/highlight-7.jpg';
+	import img14 from '../../assets/gallery/highlight-8.jpg';
+	import img15 from '../../assets/gallery/highlight-9.jpg';
+	import img16 from '../../assets/gallery/highlight-10.jpg';
 
-    let fullscreenImage:string = '';
-    function showImageFullscreen(img:string) {
-        window.document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-        fullscreenImage = img;
-    }
-    function close() {
-        window.document.getElementsByTagName('body')[0].style.overflow = 'auto';
-        fullscreenImage = '';
-    }
-    function getPreviousImage() {
-        const imgIdx = images.indexOf(fullscreenImage);
-        fullscreenImage = imgIdx === images.length - 1 ? images[0] : images[imgIdx + 1];
-    }
-    function getNextImage() {
-        const imgIdx = images.indexOf(fullscreenImage);
-        fullscreenImage = imgIdx === 0 ? images[images.length - 1] : images[imgIdx - 1];
-    }
 
-    function handleKey(e:any) {
-        if (fullscreenImage.length > 0) {
-            switch (e.keyCode) {
-                case 37: //arrow left
-                case 38: //arrow up
-                    getNextImage();
-                    break;
-                case 39: //arrow right
-                case 40: //arrow down
-                    getPreviousImage();
-                    break;
-                case 27: //escape
-                    close();
-                    break;
-            }
-            console.log(e);
-        }
-    }
+	//const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16];
+    const images =  import.meta.glob(
+	'./../../assets/gallery/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}', { eager: true }) as Record<string, { default: string}>;
+	const options = {};
+	const slides = Array.from(Array(Object.keys(images).length).keys());
+
+	let selectedIndex = 0;
+	let emblaMainApi: EmblaCarouselType;
+	let emblaThumbsApi: EmblaCarouselType;
+
+	const thumbOptions: EmblaOptionsType = {
+		containScroll: 'keepSnaps',
+		dragFree: true
+	};
+
+	const imageByIndex = (index: number): string => {
+        const name = Object.keys(images)[index % slides.length];
+        return images[name].default
+    };
+	const onInit = (event: CustomEvent<EmblaCarouselType>) => {
+		emblaMainApi = event.detail;
+		onSelect();
+		emblaMainApi.on('select', onSelect);
+		emblaMainApi.on('reInit', onSelect);
+	};
+	const onInitThumbs = (event: CustomEvent<EmblaCarouselType>) => {
+		emblaThumbsApi = event.detail;
+	};
+	const onThumbClick = (index: number) => {
+		if (!emblaMainApi || !emblaThumbsApi) return;
+		emblaMainApi.scrollTo(index);
+	};
+	const onSelect = () => {
+		if (!emblaMainApi || !emblaThumbsApi) return;
+		selectedIndex = emblaMainApi.selectedScrollSnap();
+		emblaThumbsApi.scrollTo(emblaMainApi.selectedScrollSnap());
+	};
+
+	function handleKey(e: any) {
+		switch (e.keyCode) {
+			case 37: //arrow left
+			case 38: //arrow up
+				onThumbClick(Math.max(0, selectedIndex - 1));
+				break;
+			case 39: //arrow right
+			case 40: //arrow down
+				onThumbClick(Math.min(slides.length, selectedIndex + 1));
+				break;
+		}
+		console.log(e);
+	}
 </script>
+
 <section class="bg-gray-900 text-white" id="gallery">
-    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-lg text-center">
-            <h2 id="prestations" class="text-3xl font-bold sm:text-4xl">Galerie photo</h2>
-        </div>
-        <div class="container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
-            <div class="flex flex-wrap -m-1 md:-m-2">
-                <div class="flex flex-wrap md:w-1/2">
-                    <div class="w-1/2 p-1 md:p-2">
-                        <ZoomableImage alt="" src={img1} on:click={() => showImageFullscreen(img1)}/>
-                    </div>
-                    <div class="w-1/2 p-1 md:p-2">
-                        <ZoomableImage alt="" src={img2} on:click={() => showImageFullscreen(img2)}/>
-                    </div>
-                    <div class="w-full p-1 md:p-2">
-                        <ZoomableImage alt="" src={img3} on:click={() => showImageFullscreen(img3)}/>
-                    </div>
-                </div>
-                <div class="flex flex-wrap md:w-1/2">
-                    <div class="w-full p-1 md:p-2">
-                        <ZoomableImage alt="" src={img4} on:click={() => showImageFullscreen(img4)}/>
-                    </div>
-                    <div class="w-1/2 p-1 md:p-2">
-                        <ZoomableImage alt="" src={img5} on:click={() => showImageFullscreen(img5)}/>
-                    </div>
-                    <div class="w-1/2 p-1 md:p-2">
-                        <ZoomableImage alt="" src={img6} on:click={() => showImageFullscreen(img6)}/>
-                    </div>
-                </div>
-            </div>
-	    </div>
-    </div>
+	<div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+		<div class="mx-auto max-w-lg text-center">
+			<h2 id="prestations" class="text-3xl font-bold sm:text-4xl">Galerie photo</h2>
+		</div>
+		<div class="container px-5 py-2 mx-auto lg:px-32">
+			<div
+				class="overflow-hidden bg-gray-950/30 rounded-md"
+				use:emblaCarouselSvelte={{ options, plugins: [] }}
+				on:emblaInit={onInit}
+			>
+				<div class="flex">
+					{#each slides as slide}
+						<div class="grow-0 shrink-0 basis-full">
+							<img
+								class="block w-full object-contain h-96 lg:h-[650px]"
+								alt=""
+								src={imageByIndex(slide)}
+							/>
+						</div>
+					{/each}
+				</div>
+			</div>
+			<div class="mt-4">
+				<div
+					class="overflow-hidden bg-gray-950/30"
+					use:emblaCarouselSvelte={{ options: thumbOptions, plugins: [] }}
+					on:emblaInit={onInitThumbs}
+				>
+					<div class="flex mx-2">
+						{#each slides as index}
+                            <div class="{index == selectedIndex ? 'border border-teal-700' : ''} 
+                                p-2 flex flex-grow-0 flex-shrink-0 basis-1/5 lg:basis-1/12">
+                            <button on:click={() => onThumbClick(index)} class="block w-full h-24 relative overflow-hidden" type="button">
+                                <img class="block w-full h-full object-cover" src={imageByIndex(index)} alt="" />
+                            </button>
+                            </div>
+						{/each}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
-
-{#if fullscreenImage.length > 0}
-<div transition:fade id="overlay" class="overscroll-none fixed z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60" on:click={() => close()} on:keydown|preventDefault={e => handleKey(e)}></div>
-<div id="fullscreenImage"
-on:click={() => close()}
-on:keydown|preventDefault={e => handleKey(e)}
-    transition:fly="{{ y: -200, duration: 300 }}" 
-    class="overscroll-none w-screen fixed z-50 bg-blackdrop-shadow-lg top-0 left-0 flex justify-center h-screen items-center">
-    <div class="relative">
-        <img src={fullscreenImage} class="object-contain max-h-[80vh]" alt="Photographie plein écran"/>
-        <button class="absolute top-[-25px] right-0 text-white icon" title="Fermer"><MdClose /></button>
-    </div>
-</div>
-{/if}
-<svelte:window on:keydown|preventDefault={e => handleKey(e)} />
+<svelte:window on:keydown|preventDefault={(e) => handleKey(e)} />
