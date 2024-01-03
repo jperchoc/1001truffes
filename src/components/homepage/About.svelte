@@ -1,5 +1,5 @@
 <script lang="ts">
-    import image from '../../assets/about.jpg';
+    import image from '../../assets/about.jpg?enhanced';
     import AboutBadge from '../UI/AboutBadge.svelte';
 </script>
 <section id="about">
@@ -8,7 +8,7 @@
             <div
                 class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
             >
-                <img
+                <enhanced:img
                 loading="lazy"
                 alt="Photographie de Mathilde entourée de ses chiens."
                 src={image}

@@ -5,7 +5,10 @@
 
     const images =  import.meta.glob(
     './../../assets/banner/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}', { 
-          eager: true
+          eager: true,
+          query: {
+            enhanced: true
+          }
       }) as Record<string, { default: string}>;
     const imgArr = Object.keys(images);
     let imageIndex = 0;
@@ -18,8 +21,13 @@
 
 <section id="banner" class="relative">
     {#each imgArr as img}
-        <div style="background-image: url({images[img].default})" 
-        class="transition-opacity duration-1000 absolute bg-cover bg-center bg-no-repeat inset-0 {imgArr[imageIndex] === img ? "opacity-100":"opacity-0"}"></div>
+        <div class="transition-opacity duration-1000 absolute bg-cover bg-center bg-no-repeat inset-0 {imgArr[imageIndex] === img ? "opacity-100":"opacity-0"}">
+          <enhanced:img
+            alt="Background image"
+            class="w-full h-full object-cover"
+            src={images[img].default}
+          />
+      </div>
     {/each}
     <div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 

@@ -77,7 +77,6 @@
 								class="block w-full object-contain h-96 md:h-[650px] bg-gray-800"
 								alt=""
 								src={imageByIndex(slide)}
-								sizes="(min-width:700px) 1280px, (min-width:368px) 400px"
 							/>
 						</div>
 					{/each}
