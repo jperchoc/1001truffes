@@ -1,9 +1,9 @@
 <script lang="ts">
     import Testimonial from '../UI/Testimonial.svelte';
-    import stella from '../../assets/stella.jpg';
-    import iago from '../../assets/iago.jpg';
-    import taiko from '../../assets/taiko.jpg';
-    import grizzly from '../../assets/grizzly.jpg';
+    import stella from '../../assets/testimonials/stella.jpg?enhanced';
+    import iago from '../../assets/testimonials/iago.jpg?enhanced';
+    import taiko from '../../assets/testimonials/taiko.jpg?enhanced';
+    import grizzly from '../../assets/testimonials/grizzly.jpg?enhanced';
 </script>
 
 <section id="testimonials" class="bg-white">

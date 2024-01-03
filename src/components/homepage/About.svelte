@@ -1,5 +1,5 @@
 <script lang="ts">
-    import image from '../../assets/img5.jpg';
+    import image from '../../assets/about.jpg';
     import AboutBadge from '../UI/AboutBadge.svelte';
 </script>
 <section id="about">
@@ -9,6 +9,7 @@
                 class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
             >
                 <img
+                loading="lazy"
                 alt="Photographie de Mathilde entourée de ses chiens."
                 src={image}
                 class="absolute inset-0 h-full w-full object-cover"

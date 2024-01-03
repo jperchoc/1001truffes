@@ -8,7 +8,8 @@
     export let ratings: number;
 </script>
 <div>
-    <img
+    <enhanced:img
+      loading="lazy"
       alt={imgAlt}
       src={img}
       class="mx-auto h-24 w-24 rounded-full object-cover shadow-xl"

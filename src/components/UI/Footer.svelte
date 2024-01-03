@@ -9,8 +9,8 @@
 </script>
 
 <footer aria-label="Site Footer" class="bg-white">
-    <div class="max-w-screen-xl px-4 pt-2 pb-8 mx-auto sm:px-6">
-      <div class="border-t border-gray-100 sm:flex sm:items-center sm:justify-between">
+    <div class="max-w-screen-xl px-4 pt-2 pb-4 mx-auto sm:px-6">
+      <div class="border-t border-gray-200 sm:flex sm:items-center sm:justify-between pt-2">
         <nav aria-label="Footer Navigation - Support">
           <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
             <li>

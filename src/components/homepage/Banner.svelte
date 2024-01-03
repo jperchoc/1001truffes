@@ -2,32 +2,24 @@
     import { onDestroy } from 'svelte';
     import MdMail from 'svelte-icons/md/MdMail.svelte'
     import MdLocalPhone from 'svelte-icons/md/MdLocalPhone.svelte'
-    import img1 from '../../assets/img1.jpg';
-    import img2 from '../../assets/img2.jpg';
-    import img3 from '../../assets/img3.jpg';
-    import img4 from '../../assets/img4.jpg';
-    import img5 from '../../assets/gallery/albumB&A-225.jpg';
-   
 
-    const images = [
-        img2,
-        img5,
-        img1,
-        img3,
-        img4
-    ]
+    const images =  import.meta.glob(
+    './../../assets/banner/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}', { 
+          eager: true
+      }) as Record<string, { default: string}>;
+    const imgArr = Object.keys(images);
     let imageIndex = 0;
     const interval = setInterval(() => {
-       imageIndex = (imageIndex+1) % images.length;
+       imageIndex = (imageIndex+1) % imgArr.length;
     }, 5000)
 
     onDestroy(() => clearInterval(interval));
 </script>
 
 <section id="banner" class="relative">
-    {#each images as img}
-        <div style="background-image: url({img})" 
-        class="transition-opacity duration-1000 absolute bg-cover bg-center bg-no-repeat inset-0 {images[imageIndex] === img ? "opacity-100":"opacity-0"}"></div>
+    {#each imgArr as img}
+        <div style="background-image: url({images[img].default})" 
+        class="transition-opacity duration-1000 absolute bg-cover bg-center bg-no-repeat inset-0 {imgArr[imageIndex] === img ? "opacity-100":"opacity-0"}"></div>
     {/each}
     <div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 

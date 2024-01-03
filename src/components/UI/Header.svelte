@@ -1,5 +1,5 @@
 <script lang="ts">
-    import logo from '../../assets/logo.png'
+    import logo from '../../assets/logo.png?enhanced'
     import MdMail from 'svelte-icons/md/MdMail.svelte'
     import MdLocalPhone from 'svelte-icons/md/MdLocalPhone.svelte'
     let showMenu: boolean = false;
@@ -14,7 +14,7 @@
         >
         <a class="block text-teal-600" href="/">
             <span class="sr-only">1001 Truffes</span>
-            <img src={logo} class="h-16 w-16" alt="Logo de 1001 truffes."/>
+            <enhanced:img src={logo} class="h-16 w-16" alt="Logo de 1001 truffes."/>
         </a>
 
         <div class="flex flex-1 items-center justify-end md:justify-between">

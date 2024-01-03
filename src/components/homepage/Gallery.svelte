@@ -4,7 +4,12 @@
 		type EmblaOptionsType
 	} from 'embla-carousel-svelte';
     const images =  import.meta.glob(
-	'./../../assets/gallery/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}', { eager: true }) as Record<string, { default: string}>;
+	'./../../assets/gallery/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}', { 
+        eager: true, 
+        query: {
+            enhanced: true
+        }
+    }) as Record<string, { default: string}>;
 	const options = {};
 	const slides = Array.from(Array(Object.keys(images).length).keys());
 
@@ -51,7 +56,6 @@
 				onThumbClick(Math.min(slides.length, selectedIndex + 1));
 				break;
 		}
-		console.log(e);
 	}
 </script>
 
@@ -69,8 +73,9 @@
 				<div class="flex">
 					{#each slides as slide}
 						<div class="grow-0 shrink-0 basis-full">
-							<img
-								class="block w-full object-contain h-96 lg:h-[650px]"
+							<enhanced:img
+								loading="lazy"
+								class="block w-full object-contain h-96 lg:h-[650px] bg-gray-800"
 								alt=""
 								src={imageByIndex(slide)}
 							/>
@@ -89,7 +94,7 @@
                             <div class="{index == selectedIndex ? 'border border-teal-700' : ''} 
                                 p-2 flex flex-grow-0 flex-shrink-0 basis-1/5 lg:basis-1/12">
                             <button on:click={() => onThumbClick(index)} class="block w-full h-24 relative overflow-hidden" type="button">
-                                <img class="block w-full h-full object-cover" src={imageByIndex(index)} alt="" />
+                                <enhanced:img loading="lazy" class="block w-full h-full object-cover bg-gray-600" src={imageByIndex(index)} alt="" />
                             </button>
                             </div>
 						{/each}
@@ -100,4 +105,4 @@
 	</div>
 </section>
 
-<svelte:window on:keydown|preventDefault={(e) => handleKey(e)} />
+<svelte:window on:keydown={(e) => handleKey(e)} />
