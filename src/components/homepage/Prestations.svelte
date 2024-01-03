@@ -77,7 +77,7 @@
 					</div>
 				</div>
 			</PrestationCard>
-			<PrestationCard title="Cocker">
+			<PrestationCard title="Cockers">
 				<div slot="illustration" class="invert max-h-[150px]">
 					<svg height="150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.5 41.2"
 						><defs
