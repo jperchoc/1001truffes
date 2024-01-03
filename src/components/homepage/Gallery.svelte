@@ -92,7 +92,7 @@
 						{#each slides as index}
                             <div class="{index == selectedIndex ? 'border border-teal-700' : ''} 
                                 p-2 flex flex-grow-0 flex-shrink-0 basis-1/5 md:basis-1/12">
-                            <button on:click={() => onThumbClick(index)} class="block w-full h-12 md:h-24 relative overflow-hidden" type="button">
+                            <button name="thumbnail-{index}" aria-label="thumbnail {index}" on:click={() => onThumbClick(index)} class="block w-full h-12 md:h-24 relative overflow-hidden" type="button">
                                 <enhanced:img loading="lazy" class="block w-full h-full object-cover bg-gray-600" src={imageByIndex(index)} alt="" />
                             </button>
                             </div>

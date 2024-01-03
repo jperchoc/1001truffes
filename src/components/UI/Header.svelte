@@ -57,6 +57,7 @@
             <div class="flex gap-2 sm:gap-4">
         
                 <a
+                aria-label="contacter par email"
                 href="mailto:1001truffes.toilettage@gmail.com"
                 class="block rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75"
                 >
@@ -67,6 +68,7 @@
                 </a>
 
                 <a
+                aria-label="contacter par téléphone"
                 href="tel:+33764889923"
                 class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
                 >

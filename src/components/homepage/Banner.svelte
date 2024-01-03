@@ -23,7 +23,7 @@
     {#each imgArr as img}
         <div class="transition-opacity duration-1000 absolute bg-cover bg-center bg-no-repeat inset-0 {imgArr[imageIndex] === img ? "opacity-100":"opacity-0"}">
           <enhanced:img
-            alt="Background image"
+            alt="Background"
             class="w-full h-full object-cover"
             src={images[img].default}
           />
